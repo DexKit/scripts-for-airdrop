@@ -1,4 +1,3 @@
-
 import 'dotenv/config'
 import fs from 'fs';
 
@@ -21,21 +20,29 @@ async function main() {
     const response_eth_json = (await response_eth.json() as { result: Array<{ owner_address: string, balance_formatted: string, is_contract: boolean }>, cursor: string })//.result.filter(res => res.is_contract === false)
     let response_eth_json_filtered = (response_eth_json.result as Array<{ owner_address: string, balance_formatted: string, is_contract: boolean }>).filter(res => res.is_contract === false)
     let cursor = response_eth_json.cursor;
+    
     while (cursor) {
-        cursor = ""
         try {
-
-            console.log(cursor);
+            console.log("Fetching with cursor:", cursor);
             let response_eth_cursor = await fetch(
-                "https://deep-index.moralis.io/api/v2.2/erc20/0x7866E48C74CbFB8183cd1a929cd9b95a7a5CB4F4/owners?chain=eth&order=DESC&cursor=" + response_eth_json.cursor,
+                `https://deep-index.moralis.io/api/v2.2/erc20/0x7866E48C74CbFB8183cd1a929cd9b95a7a5CB4F4/owners?chain=eth&order=DESC&cursor=${cursor}`,
                 options
-            )
-            console.log(response_eth_cursor)
-            const response_eth_json_cursor = (await response_eth_cursor.json());
-            cursor = (await response_eth_cursor.json()).cursor;
-            response_eth_json_filtered = response_eth_json_filtered.concat(response_eth_json_cursor.result);
+            );
+            
+            const response_eth_json_cursor = await response_eth_cursor.json();
+            cursor = response_eth_json_cursor.cursor;  // Update cursor from response
+            
+            const filtered_results = response_eth_json_cursor.result.filter((res: any) => res.is_contract === false);
+            response_eth_json_filtered = response_eth_json_filtered.concat(filtered_results);
+            
+            // If no cursor returned, we've reached the end
+            if (!cursor) {
+                console.log("No more pages to fetch");
+                break;
+            }
         } catch (e) {
-            console.log(e)
+            console.error("Error fetching data:", e);
+            break;  // Break the loop if there's an error
         }
     }
 
