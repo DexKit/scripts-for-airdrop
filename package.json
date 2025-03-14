@@ -1,0 +1,20 @@
+{
+  "name": "scripts-for-airdrop",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "repository": "https://github.com/DexKit/scripts-for-airdrop",
+  "author": "JoaoCampos89 <jcampos893@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "fetch-holders": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
