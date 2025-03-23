@@ -6,11 +6,16 @@
   "author": "JoaoCampos89 <jcampos893@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "fetch-holders": "ts-node src/index.ts"
+    "fetch-holders": "ts-node src/index.ts",
+    "distribute-airdrop": "ts-node src/distribute.ts",
+    "analytics": "ts-node src/analytics.ts",
+    "addExternal": "ts-node src/addExternal.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "thirdweb": "^5.92.3",
+    "viem": "^2.23.13"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
