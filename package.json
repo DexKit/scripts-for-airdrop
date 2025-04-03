@@ -6,13 +6,17 @@
   "author": "JoaoCampos89 <jcampos893@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "generate-ghostx": "ts-node src/convertGhostx.ts",
     "fetch-holders": "ts-node src/index.ts",
+    "mock-ghost-addresses": "ts-node src/generateGhostAddresses.ts",
     "distribute-airdrop": "ts-node src/distribute.ts",
     "analytics": "ts-node src/analytics.ts",
-    "addExternal": "ts-node src/addExternal.ts"
+    "map-holders": "ts-node src/mapHolders.ts",
+    "add-external": "ts-node src/addExternal.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
+    "ghost-bitcore-lib": "https://github.com/ghost-coin/ghost-bitcore-lib",
     "node-fetch": "^3.3.2",
     "thirdweb": "^5.92.3",
     "viem": "^2.23.13"

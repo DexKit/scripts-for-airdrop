@@ -1,6 +1,7 @@
 // analyse holders data
 import fs from 'fs';
 
+
 interface MoralisFinalHolder {
     owner_address: string,
     balance: string,
@@ -11,13 +12,20 @@ interface MoralisFinalHolder {
 
 interface MoralisFinalHolderArrayInterface extends Array<MoralisFinalHolder> { }
 
-const holders = JSON.parse(fs.readFileSync('holders.json', 'utf8')) as MoralisFinalHolderArrayInterface
+const holders = JSON.parse(fs.readFileSync('mapped_holders.json', 'utf8')) as MoralisFinalHolderArrayInterface
 
 console.log('Total holders:', holders.length);
-
-const airdrop_array = holders.map(h => h.airdrop_formatted);
-
 // Total airdrop
-const total_airdrop = airdrop_array.reduce((p, r) => String(Number(p) + Number(r)))
+/*const airdrop_array = holders.map(h => Number(h.airdrop_formatted));
 
-console.log("Total airdrop: ", total_airdrop)
+
+const total_airdrop = airdrop_array.reduce((p, r) => Number(p) + Number(r))
+
+console.log("Total airdrop: ", total_airdrop)*/
+
+const total_array = holders.map(h => Number(h.balance_formatted));
+
+
+const total_kit = total_array.reduce((p, r) => Number(p) + Number(r))
+
+console.log("Total airdrop: ", total_kit)

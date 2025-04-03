@@ -32,13 +32,15 @@ interface MoralisHolderResponseInterface { result: MoralisHolderArrayInterface, 
 const DEXKIT_POLYGON = '0x4d0def42cf57d6f27cd4983042a55dce1c9f853c';
 const DEXKIT_ETHEREUM = '0x7866E48C74CbFB8183cd1a929cd9b95a7a5CB4F4';
 const DEXKIT_BSC = '0x314593fa9a2fa16432913dbccc96104541d32d11';
+const DEXKIT_ARBITRUM = '0x9134283afaf6e1b45689ec0b0c82ff2b232bcb30';
+const DEXKIT_BASE = '0x946f8b0ef009f3f5b1b35e6511a82a58b09d8d4e';
 
 
-async function main() {
+async function fetchHolders({ chain, address }: { chain: string, address: string }) {
     let cursor
     // fetch holders from eth, bsc and polygon
     const response_eth = await fetch(
-        `https://deep-index.moralis.io/api/v2.2/erc20/${DEXKIT_ETHEREUM}/owners?chain=eth&order=DESC`,
+        `https://deep-index.moralis.io/api/v2.2/erc20/${address}/owners?chain=${chain}&order=DESC`,
         options
     )
 
@@ -52,7 +54,7 @@ async function main() {
         try {
             console.log("Fetching with cursor:", cursor);
             let response_eth_cursor = await fetch(
-                `https://deep-index.moralis.io/api/v2.2/erc20/0x7866E48C74CbFB8183cd1a929cd9b95a7a5CB4F4/owners?chain=eth&order=DESC&cursor=${cursor}`,
+                `https://deep-index.moralis.io/api/v2.2/erc20/${address}/owners?chain=${chain}&order=DESC&cursor=${cursor}`,
                 options
             );
 
@@ -72,100 +74,27 @@ async function main() {
         }
     }
 
-    // Fetching BSC holders
-    let response_bsc_json_filtered = []
-    try {
-
-        const response_bsc = await fetch(
-            `https://deep-index.moralis.io/api/v2.2/erc20/${DEXKIT_BSC}/owners?chain=bsc&order=DESC`,
-            options
-        )
-
-        const response_bsc_json = (await response_bsc.json()) as MoralisHolderResponseInterface;
-
-        if (!Array.isArray(response_bsc_json.result)) {
-            throw new Error('API malfunction')
-        }
-
-        response_bsc_json_filtered = (response_bsc_json.result).filter(res => res.is_contract === false).map(res => { return { balance: res.balance, balance_formatted: res.balance_formatted, owner_address: res.owner_address } }) as MoralisFinalHolderArrayInterface;
-        let cursor_bsc = response_bsc_json.cursor;
-
-        while (cursor_bsc) {
-            try {
-                console.log("Fetching with cursor:", cursor_bsc);
-                let response_bsc_cursor = await fetch(
-                    `https://deep-index.moralis.io/api/v2.2/erc20/${DEXKIT_BSC}/owners?chain=bsc&order=DESC&cursor=${cursor_bsc}`,
-                    options
-                );
-
-                const response_bsc_json_cursor = await response_bsc_cursor.json() as MoralisHolderResponseInterface;
-                cursor_bsc = response_bsc_json_cursor.cursor;  // Update cursor from response
-
-                const filtered_results = response_bsc_json_cursor.result.filter((res: any) => res.is_contract === false).map(res => { return { balance: res.balance, balance_formatted: res.balance_formatted, owner_address: res.owner_address } }) as MoralisFinalHolderArrayInterface;
-                response_bsc_json_filtered = response_bsc_json_filtered.concat(filtered_results);
-                // If no cursor returned, we've reached the end
-                if (!cursor) {
-                    console.log("No more pages to fetch");
-                    break;
-                }
-            } catch (e) {
-                console.error("Error fetching data:", e);
-                break;  // Break the loop if there's an error
-            }
-        }
-    } catch (e) {
-        console.error("Error fetching data:", e);
-    }
+    return response_eth_json_filtered
+}
 
 
-    let response_polygon_json_filtered = []
-    // Fetching Polygon holders
-    try {
-
-        // Fetching Polygon holders
-        const response_polygon = await fetch(
-            `https://deep-index.moralis.io/api/v2.2/erc20/${DEXKIT_POLYGON}/owners?chain=polygon&order=DESC`,
-            options
-        )
-        //@ts-ignore
-        const response_polygon_json = (await response_polygon.json() as MoralisHolderResponseInterface)
-
-        if (!Array.isArray(response_polygon_json.result)) {
-            throw new Error('API malfunction')
-        }
 
 
-        response_polygon_json_filtered = (response_polygon_json.result).filter(res => res.is_contract === false).map(res => { return { balance: res.balance, balance_formatted: res.balance_formatted, owner_address: res.owner_address } }) as MoralisFinalHolderArrayInterface
-        let cursor_polygon = response_polygon_json.cursor;
 
-        while (cursor_polygon) {
-            try {
-                console.log("Fetching with cursor:", cursor_polygon);
-                let response_polygon_cursor = await fetch(
-                    `https://deep-index.moralis.io/api/v2.2/erc20/${DEXKIT_POLYGON}/owners?chain=polygon&order=DESC&cursor=${cursor_polygon}`,
-                    options
-                );
+async function main() {
 
-                const response_polygon_json_cursor = await response_polygon_cursor.json() as MoralisHolderResponseInterface;
-                cursor_polygon = response_polygon_json_cursor.cursor;  // Update cursor from response
+    const response_eth_json_filtered = await fetchHolders({ chain: 'eth', address: DEXKIT_ETHEREUM })
 
-                const filtered_results = response_polygon_json_cursor.result.filter((res: any) => res.is_contract === false).map(res => { return { balance: res.balance, balance_formatted: res.balance_formatted, owner_address: res.owner_address } }) as MoralisFinalHolderArrayInterface;
-                response_polygon_json_filtered = response_polygon_json_filtered.concat(filtered_results);
+    const response_bsc_json_filtered = await fetchHolders({ chain: 'bsc', address: DEXKIT_BSC })
 
-                // If no cursor returned, we've reached the end
-                if (!cursor) {
-                    console.log("No more pages to fetch");
-                    break;
-                }
-            } catch (e) {
-                console.error("Error fetching data:", e);
-                break;  // Break the loop if there's an error
-            }
-        }
+    const response_polygon_json_filtered = await fetchHolders({ chain: 'polygon', address: DEXKIT_POLYGON })
 
-    } catch (e) {
-        console.error("Error fetching data:", e);
-    }
+    /* const response_arbitrum_json_filtered = await fetchHolders({ chain: 'arbitrum', address: DEXKIT_ARBITRUM })
+
+    const response_base_json_filtered = await fetchHolders({ chain: 'base', address: DEXKIT_BASE })*/
+
+
+
 
     // Consolidating all holders in one place
     const holders: MoralisFinalHolderArrayInterface = response_eth_json_filtered as MoralisFinalHolderArrayInterface;
@@ -195,56 +124,71 @@ async function main() {
         }
     }
 
+    /*  for (let index = 0; index < response_arbitrum_json_filtered.length; index++) {
+          const element = response_arbitrum_json_filtered[index];
+          const isOnListIndex = holders.findIndex(h => h.owner_address.toLowerCase() === element.owner_address.toLowerCase());
+          if (isOnListIndex !== -1) {
+              //  console.log('repeated holder', holders[isOnListIndex].owner_address)
+              holders[isOnListIndex].balance_formatted = holders[isOnListIndex].balance_formatted + element.balance_formatted;
+              holders[isOnListIndex].balance = (BigInt(holders[isOnListIndex].balance) + BigInt(element.balance)).toString();
+  
+          } else {
+              holders.push(element)
+          }
+      }*/
+
+    /* for (let index = 0; index < response_base_json_filtered.length; index++) {
+         const element = response_base_json_filtered[index];
+         const isOnListIndex = holders.findIndex(h => h.owner_address.toLowerCase() === element.owner_address.toLowerCase());
+         if (isOnListIndex !== -1) {
+             console.log('repeated holder', holders[isOnListIndex].owner_address)
+             holders[isOnListIndex].balance_formatted = holders[isOnListIndex].balance_formatted + element.balance_formatted;
+             holders[isOnListIndex].balance = (BigInt(holders[isOnListIndex].balance) + BigInt(element.balance)).toString();
+ 
+         } else {
+             holders.push(element)
+         }
+     }*/
+
+    const filtered_holders = holders.filter(h => Number(h.balance_formatted) > 5);
+
+
     // we want only above 5 KIT, if higher than 10k we put it as 10K
 
-    const filtered_holders = holders.filter(h => Number(h.balance_formatted) > 5).map(h => {
-        let balance_formatted = h.balance_formatted;
-        let balance = h.balance;
-        let airdrop_formatted;
-        let airdrop
-        if (Number(h.balance_formatted) > 10000) {
-            balance_formatted = '10000';
-            balance = parseEther('10000').toString()
-        }
-
-        airdrop_formatted = ((Number(balance_formatted) / 10000) * 500).toString()
-        airdrop = parseEther(airdrop_formatted).toString();
-
-
-
-        return {
-            ...h,
-            balance_formatted,
-            balance,
-            airdrop_formatted,
-            airdrop
-        }
-    })
+    /* const filtered_holders = holders.filter(h => Number(h.balance_formatted) > 5).map(h => {
+         let balance_formatted = h.balance_formatted;
+         let balance = h.balance;
+         let airdrop_formatted;
+         let airdrop
+         if (Number(h.balance_formatted) > 10000) {
+             balance_formatted = '10000';
+             balance = parseEther('10000').toString()
+         }
+ 
+         airdrop_formatted = ((Number(balance_formatted) / 10000) * 500).toString()
+         airdrop = parseEther(airdrop_formatted).toString();
+ 
+ 
+ 
+         return {
+             ...h,
+             balance_formatted,
+             balance,
+             airdrop_formatted,
+             airdrop
+         }
+     })*/
 
     // 10000 receives 500KIT in each network
 
-    // Remove after first airdrop
-    const members = JSON.parse(fs.readFileSync('data/all.json', 'utf8')) as string[];
-
-
-    let newHolders: MoralisFinalHolder[] = members.map(m => {
-        return {
-            owner_address: m,
-            balance: parseEther('50').toString(),
-            balance_formatted: '50',
-            airdrop: parseEther('50').toString(),
-            airdrop_formatted: '50'
-        }
-    })
-
-    const final_holders = [...filtered_holders, ...newHolders];
 
 
 
 
-    console.log('total number of holders:', final_holders.length)
 
-    fs.writeFile("holders.json", JSON.stringify(final_holders), function (err) {
+    console.log('total number of holders:', filtered_holders.length)
+
+    fs.writeFile("filtered_holders.json", JSON.stringify(filtered_holders), function (err) {
         if (err) throw err;
         console.log('complete');
     }
