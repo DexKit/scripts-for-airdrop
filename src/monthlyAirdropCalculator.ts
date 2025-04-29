@@ -184,9 +184,21 @@ async function main() {
     console.log('total KIT', total_kit)
     console.log('ratio per kit', ratio_per_kit)
 
+    const airdrop_metadata = {
+        total_holders,
+        total_kit,
+        ratio_per_kit
+    }
+
     fs.writeFile(`./monthly_airdrops/holders_${MONTH}.json`, JSON.stringify(holders_with_airdrop), function (err) {
         if (err) throw err;
-        console.log('complete');
+        console.log('complete holders');
+    }
+    );
+
+    fs.writeFile(`./monthly_airdrops/metadata_${MONTH}.json`, JSON.stringify(airdrop_metadata), function (err) {
+        if (err) throw err;
+        console.log('complete airdrop metadata');
     }
     );
 
