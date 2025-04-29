@@ -8,6 +8,7 @@
   "scripts": {
     "generate-ghostx": "ts-node src/convertGhostx.ts",
     "fetch-holders": "ts-node src/index.ts",
+    "fetch-monthly-holders": "ts-node src/monthlyAirdropCalculator.ts",
     "mock-ghost-addresses": "ts-node src/generateGhostAddresses.ts",
     "distribute-airdrop": "ts-node src/distribute.ts",
     "analytics": "ts-node src/analytics.ts",

@@ -188,7 +188,7 @@ async function main() {
 
     console.log('total number of holders:', filtered_holders.length)
 
-    fs.writeFile("filtered_holders.json", JSON.stringify(filtered_holders), function (err) {
+    fs.writeFile("filtered_holders_may.json", JSON.stringify(filtered_holders), function (err) {
         if (err) throw err;
         console.log('complete');
     }
