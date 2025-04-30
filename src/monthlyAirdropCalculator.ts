@@ -39,7 +39,7 @@ const MIN_KIT = 1000;
 const MAX_KIT = 10000;
 const MONTH = '5';
 //Each month we pick the amount in this wallet: https://polygonscan.com/token/0x4d0def42cf57d6f27cd4983042a55dce1c9f853c?a=0x65073B9BBb15Fec458eDa8c1646Fe443F606cB7b
-const KIT_TO_AIRDROP = 3776;
+const KIT_TO_AIRDROP = 5022;
 
 
 async function fetchHolders({ chain, address }: { chain: string, address: string }) {

@@ -3,7 +3,6 @@ import { createThirdwebClient, getContract, prepareContractCall, sendTransaction
 import { privateKeyToAccount } from "thirdweb/wallets";
 import { defineChain } from "thirdweb/chains";
 import fs from 'fs';
-import { parseEther } from 'viem';
 
 // base or arbitrum
 const whichChain: any = 'polygon'
@@ -16,13 +15,14 @@ const arbitrumDexKit = '0x9134283aFaF6E1B45689EC0b0c82fF2B232BCb30';
 const baseAirdropContract = '0xEb3546d95306B0deaF329E8363279b47E04785Ac';
 const baseDexKit = '0x946f8b0ef009f3f5b1b35e6511a82a58b09d8d4e';
 
-// Base
+// Polygon
 const polygonAirdropContract = '';
 const polygonDexKit = '0x4d0def42cf57d6f27cd4983042a55dce1c9f853c';
 
 let tokenAddress = arbitrumDexKit;;
 let airdropAddress = arbitrumAirdropContract;;
 let chainId = 42161;
+const MONTH = 5;
 
 
 if (whichChain === 'arbitrum') {
@@ -76,7 +76,7 @@ const tokenOwner = process.env.AIRDROP_WALLET
 
 async function main() {
     let transaction;
-    const holders: { recipient: string, amount: bigint }[] = JSON.parse(fs.readFileSync('holders.json', 'utf8')).map(h => {
+    const holders: { recipient: string, amount: bigint }[] = JSON.parse(fs.readFileSync(`monthly_airdrops/holders_${MONTH}.json`, 'utf8')).map(h => {
         return {
             recipient: h.owner_address,
             // use later airdrop
