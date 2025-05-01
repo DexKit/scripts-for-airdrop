@@ -11,6 +11,7 @@
     "fetch-monthly-holders": "ts-node src/monthlyAirdropCalculator.ts",
     "mock-ghost-addresses": "ts-node src/generateGhostAddresses.ts",
     "distribute-airdrop": "ts-node src/distribute.ts",
+    "distribute-airdrop-monthly": "ts-node src/distributeMonthly.ts",
     "analytics": "ts-node src/analytics.ts",
     "map-holders": "ts-node src/mapHolders.ts",
     "add-external": "ts-node src/addExternal.ts"

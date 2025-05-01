@@ -16,7 +16,7 @@ const baseAirdropContract = '0xEb3546d95306B0deaF329E8363279b47E04785Ac';
 const baseDexKit = '0x946f8b0ef009f3f5b1b35e6511a82a58b09d8d4e';
 
 // Polygon
-const polygonAirdropContract = '';
+const polygonAirdropContract = '0x8F17ca065F2975cF7CEE58634b648DF0952E24b8';
 const polygonDexKit = '0x4d0def42cf57d6f27cd4983042a55dce1c9f853c';
 
 let tokenAddress = arbitrumDexKit;;
@@ -80,9 +80,11 @@ async function main() {
         return {
             recipient: h.owner_address,
             // use later airdrop
+            //amount: BigInt(1)
             amount: BigInt(h.airdrop)
         }
     });
+    
     const totalHolders = holders.length;
     const totalPerTransaction = 100;
     let i = 1;
@@ -152,7 +154,7 @@ async function main() {
 
 
 
-    fs.writeFile(`holders_on_airdrop_${whichChain}.json`, JSON.stringify(holders_on_aidrop), function (err) {
+    fs.writeFile(`monthly_airdrops/holders_on_airdrop_${whichChain}_${MONTH}.json`, JSON.stringify(holders_on_aidrop), function (err) {
         if (err) throw err;
         console.log('complete');
     }

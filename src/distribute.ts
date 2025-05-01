@@ -3,7 +3,7 @@ import { createThirdwebClient, getContract, prepareContractCall, sendTransaction
 import { privateKeyToAccount } from "thirdweb/wallets";
 import { defineChain } from "thirdweb/chains";
 import fs from 'fs';
-import { parseEther } from 'viem';
+
 
 // base or arbitrum
 const whichChain: any = 'polygon'
@@ -17,7 +17,7 @@ const baseAirdropContract = '0xEb3546d95306B0deaF329E8363279b47E04785Ac';
 const baseDexKit = '0x946f8b0ef009f3f5b1b35e6511a82a58b09d8d4e';
 
 // Base
-const polygonAirdropContract = '';
+const polygonAirdropContract = '0x8F17ca065F2975cF7CEE58634b648DF0952E24b8';
 const polygonDexKit = '0x4d0def42cf57d6f27cd4983042a55dce1c9f853c';
 
 let tokenAddress = arbitrumDexKit;;
