@@ -37,9 +37,9 @@ const DEXKIT_BASE = '0x946f8b0ef009f3f5b1b35e6511a82a58b09d8d4e';
 
 const MIN_KIT = 1000;
 const MAX_KIT = 10000;
-const MONTH = '5';
+const MONTH = '6';
 //Each month we pick the amount in this wallet: https://polygonscan.com/token/0x4d0def42cf57d6f27cd4983042a55dce1c9f853c?a=0x65073B9BBb15Fec458eDa8c1646Fe443F606cB7b
-const KIT_TO_AIRDROP = 5022;
+const KIT_TO_AIRDROP = 2320;
 
 
 async function fetchHolders({ chain, address }: { chain: string, address: string }) {

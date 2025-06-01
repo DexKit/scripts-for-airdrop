@@ -22,7 +22,7 @@ const polygonDexKit = '0x4d0def42cf57d6f27cd4983042a55dce1c9f853c';
 let tokenAddress = arbitrumDexKit;;
 let airdropAddress = arbitrumAirdropContract;;
 let chainId = 42161;
-const MONTH = 5;
+const MONTH = 6;
 
 
 if (whichChain === 'arbitrum') {

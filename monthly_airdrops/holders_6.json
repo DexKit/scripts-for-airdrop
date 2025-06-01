@@ -1,0 +1,520 @@
+[
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x5bd68b4d6f90bcc9f3a9456791c0db5a43df676d",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x65073b9bbb15fec458eda8c1646fe443f606cb7b",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "6087894706477272850001",
+        "balance_formatted": "6087.894706477273",
+        "owner_address": "0xd7ceceaf50ed8ab1b1a319fb36d0bb0dad817b6d",
+        "airdrop_formatted": "40.92223773129203",
+        "airdrop": "40922237731292030000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x533e3c0e6b48010873b947bddc4721b1bdff9648",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x7e190affb689193b324e9daa29c8087950ae021e",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0xce1cef3f33d4815434e160168214c7615108027d",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0xd430ed64f7be59656f894c95079bbb0f7261381b",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0xbdf0f105bd33c1582c787802f386f978e00dd3e3",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x4801edc99c84bbd684265d057d3c6913a5b74630",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x30003d555e5a0e05e2889c100f1085bbd8f032a7",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x3fb64274f1126c1469713ce163baddc31ac610f4",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x1a5d1ca1d9a0c6a1db0d01b596b6729d88e95718",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0xf5ef9f8e920cbfa13cb737125409733e48afb9ec",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x701e7cdbc9cda3d1f1eacb73acf8b9b7f0995923",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x985199f8ee417573b0e9c25b88d556f12b59812f",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x9ba3560231e3e0ad7dde23106f5b98c72e30b468",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "9663648113113645618502",
+        "balance_formatted": "9663.648113113646",
+        "owner_address": "0xd50b5a3a4017850377e74897d1286ebb3d5cbaf9",
+        "airdrop_formatted": "64.95810530619673",
+        "airdrop": "64958105306196730000"
+    },
+    {
+        "balance": "9019023917654148453327",
+        "balance_formatted": "9019.023917654149",
+        "owner_address": "0x577edb8b4ec03093a45cd850cee5fb0b8378c917",
+        "airdrop_formatted": "60.62500398861484",
+        "airdrop": "60625003988614840000"
+    },
+    {
+        "balance": "8985875162043399129249",
+        "balance_formatted": "8985.8751620434",
+        "owner_address": "0x5053d3d9b1ad986448cf627744773a03187db1f9",
+        "airdrop_formatted": "60.40218126861013",
+        "airdrop": "60402181268610130000"
+    },
+    {
+        "balance": "8074617731407445674777",
+        "balance_formatted": "8074.617731407446",
+        "owner_address": "0x7495b5bef301d64827661aa04b172fff4f54e1eb",
+        "airdrop_formatted": "54.27679720583797",
+        "airdrop": "54276797205837970000"
+    },
+    {
+        "balance": "8011531282945497913663",
+        "balance_formatted": "8011.531282945498",
+        "owner_address": "0x3773bcf38078a2c220f7d9073a3610e13bab3f66",
+        "airdrop_formatted": "53.85273621824632",
+        "airdrop": "53852736218246320000"
+    },
+    {
+        "balance": "7803841596176113810004",
+        "balance_formatted": "7803.841596176113",
+        "owner_address": "0x05380128146143c302e1fd35b16f2a430d9e7b3c",
+        "airdrop_formatted": "52.4566662883128",
+        "airdrop": "52456666288312800000"
+    },
+    {
+        "balance": "7340783931367827406454",
+        "balance_formatted": "7340.783931367827",
+        "owner_address": "0x020ac3f0de20b09df47f098dc59813bcc85cbe6e",
+        "airdrop_formatted": "49.34403757901199",
+        "airdrop": "49344037579011990000"
+    },
+    {
+        "balance": "5581105327447325232768",
+        "balance_formatted": "5581.105327447325",
+        "owner_address": "0x2fd69e1dcc02e845a63337f2f14c1edeec166527",
+        "airdrop_formatted": "37.51564868068115",
+        "airdrop": "37515648680681150000"
+    },
+    {
+        "balance": "5060985379510458341238",
+        "balance_formatted": "5060.985379510458",
+        "owner_address": "0x63c266fefbb98f64264c9ca4da08b82c8f52139b",
+        "airdrop_formatted": "34.019452838855265",
+        "airdrop": "34019452838855265000"
+    },
+    {
+        "balance": "4769835143005194948245",
+        "balance_formatted": "4769.835143005194",
+        "owner_address": "0x89239de8024edd5122beef1480187d796e7faf35",
+        "airdrop_formatted": "32.062369188720226",
+        "airdrop": "32062369188720226000"
+    },
+    {
+        "balance": "3955965727373936984004",
+        "balance_formatted": "3955.9657273739367",
+        "owner_address": "0x015bf68ef11bd55e43a119b5752c4b3becae7f24",
+        "airdrop_formatted": "26.591617916814275",
+        "airdrop": "26591617916814275000"
+    },
+    {
+        "balance": "3796331542170119879406",
+        "balance_formatted": "3796.33154217012",
+        "owner_address": "0x41bbc29a62d831c77cc2ce2c3b0980cb13a78952",
+        "airdrop_formatted": "25.518572407337693",
+        "airdrop": "25518572407337693000"
+    },
+    {
+        "balance": "3605317754098572272540",
+        "balance_formatted": "3605.317754098572",
+        "owner_address": "0x694ba66f333ee1a1850a676c6ceba6ed4b941a57",
+        "airdrop_formatted": "24.234596250998813",
+        "airdrop": "24234596250998813000"
+    },
+    {
+        "balance": "3461069242032795483667",
+        "balance_formatted": "3461.0692420327955",
+        "owner_address": "0xd3067cd83925c38439fea8fadddcdb106ff28530",
+        "airdrop_formatted": "23.26497174404728",
+        "airdrop": "23264971744047280000"
+    },
+    {
+        "balance": "3240959474486310017203",
+        "balance_formatted": "3240.95947448631",
+        "owner_address": "0x946f3a05343a80174332dd1cc10d21fc84771246",
+        "airdrop_formatted": "21.78541523579604",
+        "airdrop": "21785415235796040000"
+    },
+    {
+        "balance": "3155543930313215457872",
+        "balance_formatted": "3155.5439303132157",
+        "owner_address": "0x0d0e4f04d81de844a8e5e2f3c506ba7e43ffecef",
+        "airdrop_formatted": "21.21126023260913",
+        "airdrop": "21211260232609130000"
+    },
+    {
+        "balance": "3022873489512030094889",
+        "balance_formatted": "3022.87348951203",
+        "owner_address": "0x8fc9399f9dec7d0d5529c94d81b9a3459739bb8d",
+        "airdrop_formatted": "20.319462397701606",
+        "airdrop": "20319462397701606000"
+    },
+    {
+        "balance": "2868429577254140557240",
+        "balance_formatted": "2868.429577254141",
+        "owner_address": "0x16b1c24149186012ad4a98722e601359c3ca18f0",
+        "airdrop_formatted": "19.281305399545293",
+        "airdrop": "19281305399545293000"
+    },
+    {
+        "balance": "2847218051516522409918",
+        "balance_formatted": "2847.2180515165223",
+        "owner_address": "0x9c74c9e449a7f52ab4542df3ec0d0597aae6b847",
+        "airdrop_formatted": "19.13872358091517",
+        "airdrop": "19138723580915170000"
+    },
+    {
+        "balance": "2803993686683738561184",
+        "balance_formatted": "2803.993686683739",
+        "owner_address": "0x0933527c7f6ee9f3e987be97ed5d8ea61b129937",
+        "airdrop_formatted": "18.8481735929876",
+        "airdrop": "18848173592987600000"
+    },
+    {
+        "balance": "3844575330637053352672",
+        "balance_formatted": "3844.5753306370534",
+        "owner_address": "0x8ed0b73f3440eaf27d14d429713a5ff7eea03691",
+        "airdrop_formatted": "25.842862474083017",
+        "airdrop": "25842862474083017000"
+    },
+    {
+        "balance": "2671038110479268652245",
+        "balance_formatted": "2671.038110479268",
+        "owner_address": "0xc1004ff9abd758742dc50997de61016fe29eddfe",
+        "airdrop_formatted": "17.954459105555447",
+        "airdrop": "17954459105555447000"
+    },
+    {
+        "balance": "2266611905462038294385",
+        "balance_formatted": "2266.611905462038",
+        "owner_address": "0x38318f24010390c1e2bd8b78cfd9fff02555b775",
+        "airdrop_formatted": "15.235945382105076",
+        "airdrop": "15235945382105076000"
+    },
+    {
+        "balance": "2139170768994956482989",
+        "balance_formatted": "2139.1707689949562",
+        "owner_address": "0xcf07d7ee1f67c38a937f626abdb9b099f1541f0b",
+        "airdrop_formatted": "14.379298423723352",
+        "airdrop": "14379298423723352000"
+    },
+    {
+        "balance": "1849254885959901476775",
+        "balance_formatted": "1849.2548859599015",
+        "owner_address": "0x1ca387f0d422c96c415f0d1d4e9a561e1f251440",
+        "airdrop_formatted": "12.430511977890912",
+        "airdrop": "12430511977890912000"
+    },
+    {
+        "balance": "1793073658275661842930",
+        "balance_formatted": "1793.0736582756617",
+        "owner_address": "0xc69182d1ab70e268228382383d6886965c5d07a1",
+        "airdrop_formatted": "12.052867214606128",
+        "airdrop": "12052867214606128000"
+    },
+    {
+        "balance": "1762688180792618877276",
+        "balance_formatted": "1762.6881807926188",
+        "owner_address": "0x5458d5a503b5ab755ba550341dde46f8e3a28ff2",
+        "airdrop_formatted": "11.848618982156093",
+        "airdrop": "11848618982156093000"
+    },
+    {
+        "balance": "1647319768356669856226",
+        "balance_formatted": "1647.31976835667",
+        "owner_address": "0x332a01633e52fcc4937149b62fdc8562bbbbe64b",
+        "airdrop_formatted": "11.073123703737012",
+        "airdrop": "11073123703737012000"
+    },
+    {
+        "balance": "1576420224063885473950",
+        "balance_formatted": "1576.4202240638856",
+        "owner_address": "0x29841f365a949f0e77b9f20bc86a8ea5599e9715",
+        "airdrop_formatted": "10.596543843789261",
+        "airdrop": "10596543843789261000"
+    },
+    {
+        "balance": "1525880807478474373741",
+        "balance_formatted": "1525.8808074784743",
+        "owner_address": "0xc4b5cd588a129d6dfd85ab09f192bb33211a6358",
+        "airdrop_formatted": "10.256822787492322",
+        "airdrop": "10256822787492322000"
+    },
+    {
+        "balance": "1007850423617944961115",
+        "balance_formatted": "1007.850423617945",
+        "owner_address": "0xaf16774d5579bbcbafb72df314c17704360bc0fb",
+        "airdrop_formatted": "6.774672792713632",
+        "airdrop": "6774672792713632000"
+    },
+    {
+        "balance": "1505942477100213678462",
+        "balance_formatted": "1505.9424771002136",
+        "owner_address": "0xdb4faa6cf499f67d9558fdf8f84e841add6814a5",
+        "airdrop_formatted": "10.122799264576244",
+        "airdrop": "10122799264576244000"
+    },
+    {
+        "balance": "1473517909511227074869",
+        "balance_formatted": "1473.5179095112271",
+        "owner_address": "0x055ea36265d583bdcd0a384a0853ea3cea1a7a30",
+        "airdrop_formatted": "9.904844466212353",
+        "airdrop": "9904844466212353000"
+    },
+    {
+        "balance": "1437259694298326709367",
+        "balance_formatted": "1437.2596942983268",
+        "owner_address": "0x45c7925ecd421249cf28a941ba2587ba8bc2aefe",
+        "airdrop_formatted": "9.661120260359057",
+        "airdrop": "9661120260359057000"
+    },
+    {
+        "balance": "1371753228295433910945",
+        "balance_formatted": "1371.7532282954337",
+        "owner_address": "0x0e5034243d0eb5213f4b0918139d66845aebd901",
+        "airdrop_formatted": "9.22079214958292",
+        "airdrop": "9220792149582920000"
+    },
+    {
+        "balance": "1339336835425000025004",
+        "balance_formatted": "1339.3368354250001",
+        "owner_address": "0x86a9cb1a1c3816b9b8e6d2e15bfddd42e3896b74",
+        "airdrop_formatted": "9.002892300884247",
+        "airdrop": "9002892300884247000"
+    },
+    {
+        "balance": "1290286773183970259758",
+        "balance_formatted": "1290.2867731839704",
+        "owner_address": "0xbc9c6f20dc483a76026dbbb7c9972cab2b918ba5",
+        "airdrop_formatted": "8.67318254003269",
+        "airdrop": "8673182540032690000"
+    },
+    {
+        "balance": "1226417185125291778678",
+        "balance_formatted": "1226.4171851252918",
+        "owner_address": "0xd79df542a733b7c59b169940ade2591159f0b89f",
+        "airdrop_formatted": "8.243857364031191",
+        "airdrop": "8243857364031191000"
+    },
+    {
+        "balance": "1144016880258854187004",
+        "balance_formatted": "1144.0168802588541",
+        "owner_address": "0x0c40db5638389c726924ae5c24089b5fcb1b7a14",
+        "airdrop_formatted": "7.6899705070052935",
+        "airdrop": "7689970507005293500"
+    },
+    {
+        "balance": "1116114029520833355004",
+        "balance_formatted": "1116.1140295208334",
+        "owner_address": "0xa306778e567d0dc28db636884d660819e867cb4b",
+        "airdrop_formatted": "7.502410250736872",
+        "airdrop": "7502410250736872000"
+    },
+    {
+        "balance": "1116114029520833363475",
+        "balance_formatted": "1116.1140295208334",
+        "owner_address": "0x9cfb7d80dcb377f407a0c952bf52377cf3952514",
+        "airdrop_formatted": "7.502410250736872",
+        "airdrop": "7502410250736872000"
+    },
+    {
+        "balance": "1125907566918895488967",
+        "balance_formatted": "1125.9075669188953",
+        "owner_address": "0x631d53461cb3ad21ba4924b8ba6f53f5bdca78d7",
+        "airdrop_formatted": "7.568241459218087",
+        "airdrop": "7568241459218087000"
+    },
+    {
+        "balance": "1071103010728780385387",
+        "balance_formatted": "1071.1030107287804",
+        "owner_address": "0xb4a6b7702f9d5fa3372b9a26f0b41db551e3e4f3",
+        "airdrop_formatted": "7.199850548188751",
+        "airdrop": "7199850548188751000"
+    },
+    {
+        "balance": "1023478121119964231022",
+        "balance_formatted": "1023.4781211199643",
+        "owner_address": "0xcacc7ee9f70323b488f8c6d5494ecf4069ea8f7f",
+        "airdrop_formatted": "6.879720659538584",
+        "airdrop": "6879720659538584000"
+    },
+    {
+        "balance": "1022825089990545613213",
+        "balance_formatted": "1022.8250899905456",
+        "owner_address": "0xcb92af5a770c991a4ee4c121e63909a5270ae892",
+        "airdrop_formatted": "6.875331047626346",
+        "airdrop": "6875331047626346000"
+    },
+    {
+        "balance": "1084223708014508741878",
+        "balance_formatted": "1084.2237080145087",
+        "owner_address": "0xa409512cf629a3f0880f51fd3d166fe24a6df790",
+        "airdrop_formatted": "7.288046602722287",
+        "airdrop": "7288046602722287000"
+    },
+    {
+        "balance": "2092553474268026697152",
+        "balance_formatted": "2092.5534742680265",
+        "owner_address": "0x820f92c1b3ad8e962e6c6d9d7caf2a550aec46fb",
+        "airdrop_formatted": "14.065941490139164",
+        "airdrop": "14065941490139164000"
+    },
+    {
+        "balance": "1065381573633522747004",
+        "balance_formatted": "1065.3815736335227",
+        "owner_address": "0xe68c71aadcdc055ab78f145fc8c38bd08ace3e71",
+        "airdrop_formatted": "7.1613916029761056",
+        "airdrop": "7161391602976105600"
+    },
+    {
+        "balance": "1076714460562898647236",
+        "balance_formatted": "1076.7144605628987",
+        "owner_address": "0x7545833a2dabdcc1b23ddc3e7a34acabbc1ccbf8",
+        "airdrop_formatted": "7.237570169700057",
+        "airdrop": "7237570169700057000"
+    },
+    {
+        "balance": "1077100770943491496329",
+        "balance_formatted": "1077.1007709434914",
+        "owner_address": "0x6eb02e4e5ab679900afee03c0be37a73a1535e6d",
+        "airdrop_formatted": "7.240166910608842",
+        "airdrop": "7240166910608842000"
+    },
+    {
+        "balance": "1387126808870846625004",
+        "balance_formatted": "1387.1268088708466",
+        "owner_address": "0xb7e54139efbc2598134cc73d81c194e6152a78f9",
+        "airdrop_formatted": "9.32413186707489",
+        "airdrop": "9324131867074890000"
+    },
+    {
+        "balance": "1465058458534998194940",
+        "balance_formatted": "1465.0584585349982",
+        "owner_address": "0x2a2b7015c8b308aa45cb4d6a5fee46770d92ce1a",
+        "airdrop_formatted": "9.847980857261112",
+        "airdrop": "9847980857261112000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x5265bde27f57e738be6c1f6ab3544e82cdc92a8f",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0xd4cea40761cab3b05bba3a7c2cd3124c5faea53b",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "10000000000000000000000",
+        "balance_formatted": "10000",
+        "owner_address": "0x33d116c8c445f68810f2a5da42cf0978ec6b0735",
+        "airdrop_formatted": "67.21903006593138",
+        "airdrop": "67219030065931380000"
+    },
+    {
+        "balance": "1303488714281119400363",
+        "balance_formatted": "1303.4887142811194",
+        "owner_address": "0x5047648b7e768bf2ef7e448a4c105ecae5982175",
+        "airdrop_formatted": "8.76192470758648",
+        "airdrop": "8761924707586480000"
+    },
+    {
+        "balance": "1010276895804347555156",
+        "balance_formatted": "1010.2768958043476",
+        "owner_address": "0x11ededebf63bef0ea2d2d071bdf88f71543ec6fb",
+        "airdrop_formatted": "6.790983303398827",
+        "airdrop": "6790983303398827000"
+    },
+    {
+        "balance": "1073629965349718510947",
+        "balance_formatted": "1073.6299653497185",
+        "owner_address": "0x051ac9d0442d5c689e6a301bebc82821f42fc93a",
+        "airdrop_formatted": "7.216836492052759",
+        "airdrop": "7216836492052759000"
+    }
+]
