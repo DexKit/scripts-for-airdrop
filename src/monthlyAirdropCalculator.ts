@@ -34,12 +34,15 @@ const DEXKIT_ETHEREUM = '0x7866E48C74CbFB8183cd1a929cd9b95a7a5CB4F4';
 const DEXKIT_BSC = '0x314593fa9a2fa16432913dbccc96104541d32d11';
 const DEXKIT_ARBITRUM = '0x9134283afaf6e1b45689ec0b0c82ff2b232bcb30';
 const DEXKIT_BASE = '0x946f8b0ef009f3f5b1b35e6511a82a58b09d8d4e';
+// We filter out the holders that are not on the exchange addresses
+const BILAXY_ADDRESS = '0x9BA3560231e3E0aD7dde23106F5B98C72E30b468'.toLowerCase();
+
 
 const MIN_KIT = 1000;
 const MAX_KIT = 10000;
-const MONTH = '6';
+const MONTH = '7';
 //Each month we pick the amount in this wallet: https://polygonscan.com/token/0x4d0def42cf57d6f27cd4983042a55dce1c9f853c?a=0x65073B9BBb15Fec458eDa8c1646Fe443F606cB7b
-const KIT_TO_AIRDROP = 2320;
+const KIT_TO_AIRDROP = 1684;
 
 
 async function fetchHolders({ chain, address }: { chain: string, address: string }) {
@@ -136,7 +139,7 @@ async function main() {
 
     
 
-    const filtered_holders = holders.filter(h => Number(h.balance_formatted) >= MIN_KIT).map(h => {
+    const filtered_holders = holders.filter(h=> BILAXY_ADDRESS !== h.owner_address.toLowerCase()).filter(h => Number(h.balance_formatted) >= MIN_KIT).map(h => {
          let balance_formatted = h.balance_formatted;
          let balance = h.balance;
          if (Number(h.balance_formatted) > MAX_KIT) {
